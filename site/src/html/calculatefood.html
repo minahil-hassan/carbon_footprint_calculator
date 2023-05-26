@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Carbon Footprint</title>
+    <script src="../js/calculatefood.js"></script>
+    <link rel="stylesheet" href="../css/calculatefood.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="main">
+        <h1 onclick="window.location.href='../html/index.html'" style="font-family: 'Poppins';" id="logo">EatEco</h1>
+        <div class="main_container">
+            <h1 class="title" for="">Type of Food</h1><br>
+            <form name="foodForm">
+                <div class="food_label">Food Item 1</div><br>
+                <select name="foodType1" class="select-box">
+                    <option value="lamb" selected>Lamb</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="fish">Fish</option>
+                    <option value="pork">Pork</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="fish">Fish</option>
+                    <option value="beef">Beef</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="rice">Rice</option>
+                    <option value="noodlespasta">Noodles/Pasta</option>
+                    <option value="beanstofu">Beans/Tofu</option>
+                    <option value="vege">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="lentils">Lentils</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="pitatortilla">Pita/Tortilla</option>
+                    <option value="bread">Bread</option>
+                </select>
+
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity1" 
+                    class="quantity_input"> </p><br><br>
+                
+                <div class="food_label">Food Item 2</div><br>
+                <select name="foodType2" class="select-box">
+                    <option value="lamb" selected>Lamb</option>
+                    <option value="chicken">Chicken</option>                        <option value="fish">Fish</option>
+                    <option value="pork">Pork</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="fish">Fish</option>
+                    <option value="beef">Beef</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="rice">Rice</option>
+                    <option value="noodlespasta">Noodles/Pasta</option>
+                    <option value="beanstofu">Beans/Tofu</option>
+                    <option value="vege">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="lentils">Lentils</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="pitatortilla">Pita/Tortilla</option>
+                    <option value="bread">Bread</option>
+                </select>
+    
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity2" 
+                    class="quantity_input"> </p><br><br>
+
+                <div class="food_label">Food Item 3</div><br>
+                <select name="foodType3" class="select-box">
+                    <option value="lamb" selected>Lamb</option>
+                    <option value="chicken">Chicken</option>                        <option value="fish">Fish</option>
+                    <option value="pork">Pork</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="fish">Fish</option>
+                    <option value="beef">Beef</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="rice">Rice</option>                        <option value="noodlespasta">Noodles/Pasta</option>
+                    <option value="beanstofu">Beans/Tofu</option>
+                    <option value="vege">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="lentils">Lentils</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="pitatortilla">Pita/Tortilla</option>
+                    <option value="bread">Bread</option>
+                </select>
+    
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity3" 
+                    class="quantity_input"> </p><br><br>
+                    
+            </form>
+            <div id="new">
+
+            </div>
+            <a class="drinks_link" href="../html/calculatedrink.html">Move to Drinks Calculation</a>
+            <button class="submit_button" onclick="submitFormAndDisplayFootprint()">Calculate Carbon Footprint</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Drink Footprint</title>
+    <link rel="stylesheet" href="../css/calculatedrinks.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="../js/calculatedrink.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1 onclick="window.location.href='../html/index.html'" style="font-family: 'Poppins';" id="logo">EatEco</h1>
+        <div class="main_container">
+            <h1 class="title">How Is Your Drink Packaged?</h1><br>
+            <form name="drinkForm">
+                <div class="drink_label">Drink Item 1</div><br>
+                <select name="drinkType1" class="select-box">
+                    <option value="plastic bottle" selected>Plastic Bottle</option>
+                    <option value="tin can">Tin Can</option>
+                    <option value="paper cup">Paper Cup</option>
+                    <option value="glass bottle">Glass Bottle</option>
+                </select>
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity1" 
+                    class="quantity_input"> </p><br><br>
+            
+                <div class="drink_label">Drink Item 2</div><br>
+                <select name="drinkType2" class="select-box">
+                    <option value="plastic bottle" selected>Plastic Bottle</option>
+                    <option value="tin can">Tin Can</option>
+                    <option value="paper cup">Paper Cup</option>
+                    <option value="glass bottle">Glass Bottle</option>
+                </select>
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity2" 
+                    class="quantity_input"> </p><br><br>
+
+                <div class="drink_label">Drink Item 3</div><br>
+                <select name="drinkType3" class="select-box">
+                    <option value="plastic bottle" selected>Plastic Bottle</option>
+                    <option value="tin can">Tin Can</option>
+                    <option value="paper cup">Paper Cup</option>
+                    <option value="glass bottle">Glass Bottle</option>
+                </select>
+                <p class="quantity_label" for="">Quantity<input type="text" name="quantity3" 
+                    class="quantity_input"> </p><br><br>
+            </form>
+            <div id="new">
+
+            </div>
+            <a class="rank_link" href="../html/rank.html">Find Out Your Rank!!</a>
+            <button class="submit_button" onclick="submitFormAndDisplayFootprint()">Calculate Carbon Footprint</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,795 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+/*
+Theme Name: Avada Agency
+Theme URI: http://themewagon.com/demo/avada-agency-pro/
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: A multipurpose responsive theme for organization. Built with HTML5, CSS3, Bootstrap framework. Google fonts, Font Awesome Icon integrated
+Version: 1.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: responsive layout, multiple-page
+*/
+
+/* Simplified, modified, and customised by RADsite Web Development on behalf of Carbon Footprint Ltd - March 2016 */
+
+body {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.45;
+	color: #333;
+}
+
+*:hover {
+	-webkit-transition: all 0.4s ease-in-out;
+	   -moz-transition: all 0.4s ease-in-out;
+	    -ms-transition: all 0.4s ease-in-out;
+	     -o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+}
+
+html {
+	font-size: 0.813em;
+}
+
+/* masthead - top section above main navigation with logo and search box */
+
+.masthead { background-color: none; }
+div.nav-header div.logo { float: left; width: 50px; height: 70px; }
+div.searchbox { margin: 10px 0 10px 10px; font-size: 13px; text-align: right; }
+div.searchbox a { color: #1CA941; }
+div.searchbox a:hover { color: #000000; }
+div.searchbox .srchform { background-image: url("searchbox.gif"); display: block; width: 222px; height: 30px; position: relative; }
+div.searchbox .srchtext { background: none; border: 0; width: 172px; height: 22px; font-size: 14px; color: #FFFFFF; vertical-align:text-top; padding:0; margin: 0; position: absolute; top: 4px; left: 14px;}
+div.searchbox .srchsubmit { width: 36px; height: 29px; border: 0; margin: 0 1px 0 0; padding: 0; cursor: hand; position: absolute; top: 0; right: 0;}
+div.searchbox p.strapline { text-align: right; margin: 0 0 10px 0; font-size: 16px; color: #808080; }
+div.searchbox p.strapline span { font-weight: bold; }
+
+/* main navigation */
+.welcome-message{
+	color: #f1f1f1;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	text-transform: uppercase;
+	padding-left:80px;
+	padding-top:25px;
+  }
+
+#mainNavigation {
+    margin-bottom: 0px;
+    /* background-color: #0f9309; */
+    background-color: #3baa04;
+    width:100%;
+    position:fixed;
+    z-index: 2;
+}
+#mainNavigation .navbar-nav li a {
+	color: #ffffff;
+	padding: 25px 15px;
+}
+
+#mainNavigation .navbar-nav li.open a { 
+    color: #262626; 
+}
+
+#mainNavigation .navbar-nav li a:hover {
+	color: #262626;
+}
+
+#mainNavigation .navbar-nav li.open ul li a {
+    color: #ffffff;
+}
+
+#mainNavigation .navbar-nav li.open ul li a:hover {
+	color: #262626;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-menu {
+    background-color: #0f9309;
+	padding: 0px;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-menu li a {
+    padding: 10px 25px;
+    display: block;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-submenu {
+    right: 100%;
+    position: absolute;
+    background-color: #0f9309;
+    border: 1px solid rgba(0,0,0,0.35);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+    top: 10px;
+    min-width: 200px;
+    padding: 0px;
+    margin: 2px 0 0;
+    text-align: left;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-submenu li {
+    position: relative;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-submenu li a {
+    padding: 10px 25px;
+    display: block;
+}
+
+#mainNavigation .navbar-nav li ul.dropdown-submenu li a:hover {
+	background-color: #f5f5f5;
+	color: #262626;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-toggle {
+	border-color: #CECECE;
+}
+
+.navbar-toggle {
+	border-radius: 0px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.navbar .navbar-toggle .icon-bar {
+	background-color: #B9B9B9;
+}
+
+.nav-tabs {
+	margin-right: 2px;
+}
+
+.nav-tabs>li>a {
+    border-radius: 0px;
+    margin: 0px;
+    padding: 10px 24px;
+}
+
+.tab-content {
+    border: 1px solid #dadada;
+    border-top-color: transparent;
+    margin-right: 3px;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li.dropdown:hover .dropdown-menu {
+		display:block;
+	}
+
+	.navbar-nav>li.dropdown:hover .dropdown-submenu {
+	    display: none;
+	}
+
+	.navbar-nav>li>.dropdown-menu>.dropdown:hover .dropdown-submenu {
+	    display: block;
+	}
+}
+
+/* page header below main navigation */
+
+.page-head {
+    background: no-repeat center center;
+	background-size: cover;
+}
+
+.page-head .header-wrapper {
+	background-color: rgba(0,0,0,0.45);
+	position: relative;
+	padding: 65px 0px;
+}
+
+div.slimHeader { 
+    color: #ffffff; 
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	background-color: #f9f9f9;
+	border: 1px solid #E0E0E0;
+	border-radius: 0px;
+	box-shadow: none;
+	height: auto;
+	padding: 14px 28px;
+}
+
+.form-control:focus {
+    border-color: #DADADA;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(150, 144, 144, 0.5);
+       -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(150, 144, 144, 0.5);
+    	-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(150, 144, 144, 0.5);
+    	 -o-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(150, 144, 144, 0.5);
+    		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(150, 144, 144, 0.5);
+}
+
+::-webkit-input-placeholder {
+   color: #969595;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #969595;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #969595;  
+}
+
+:-ms-input-placeholder {  
+   color: #969595;  
+}
+.vl{
+	border-right: 1px solid rgb(170, 169, 169);
+	height:800px;
+	float: right;
+	padding-left:50px;
+	padding-top: 50px;
+}
+h1, h2, h3, h4 {
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 3.157em;
+}
+
+h2 {
+	font-size: 3.369em;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1.777em;
+}
+
+h4 {
+	font-size: 1.333em;
+}
+
+p {
+	line-height: 1.62em;
+	margin-bottom: 1.3em;
+}
+
+small, .font_small {
+	font-size: 0.75em;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.bg-light-gray {
+	background-color: #f9f9f9;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+blockquote {
+	border: 1px solid #f1f1f1;
+	font-size: 15px;
+	margin: 40px 0px;
+	padding: 20px 50px;
+}
+
+blockquote p {
+    margin: 0px 20px;
+}
+
+blockquote p:before {
+	color: #f1f1f1;
+    content: "\f10d";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    margin-left: -40px;
+    position: absolute;
+}
+
+blockquote footer {
+	background-color: transparent;
+	color: #000000;
+	font-size: 14px;
+    padding: 10px 0px;
+    margin: 10px 20px 0;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	font-size: 15px;
+	float: right;
+}
+
+.breadcrumb a {
+    color: #C7C4C0;
+}
+
+.breadcrumb a:hover {
+	color: #ffffff;
+}
+
+.breadcrumb>.active {
+	color: #fff;
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 10px;
+	color: #C7C4C0;
+	font-family: 'FontAwesome';
+	content: "\f101";
+}
+
+li {
+	list-style: none;
+}
+
+.section-title {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.section-sub-title {
+	margin-bottom: 0px;
+	text-transform: capitalize;
+	word-spacing: 1px;
+}
+
+/* Carbon Footprint table, bullets and link colours */
+span.co2 {font-size: 0.7em;}
+div.main-content ol {border: 0; margin: 0em 0em 0.5em 0em; padding: 0; list-style-type: decimal; list-style-position: outside; }
+div.main-content ul {border: 0; margin: 0em 0em 0.5em 0em; padding: 0; list-style-type: none; list-style-position: outside; }
+div.main-content li {border: 0; margin: 0em 0em 0.2em 0; padding: 0 0 0 1.2em; background:url("liarrow.gif") 0 4px no-repeat;}
+div.main-content p.footer {margin: 0em 0em 0.5em 0em; font-size: 0.8em;}
+div.main-content a {color: #1CA941;}
+div.main-content a:hover {color: #000000;}
+div.main-content .box {border: 0; margin: 0em 0em 0.5em 0em; padding: 10px; background-color: #B7EEC7;}
+div.main-content label {font-weight: 400; padding-left: 5px;}
+div.main-content input.cfp {background-color: #0f9309; color: #ffffff; border: 1px solid #0f9309;}
+div.main-content input.cfp:hover {background-color: #f5f5f5; color: #262626;}
+div.main-content input[disabled].cfp {background-color: #a8c0a4; color: #808080; border: 1px solid #0f9309;}
+div.main-content input.linkbutton {background-color: Transparent; color: #1CA941; border-width: 0; padding: 0; margin: 0; text-decoration: none;}
+div.main-content input.linkbutton:hover {color: #000000; text-decoration: none; cursor: hand;}
+div.main-content a.buttonlink, div.main-content a.buttonlink:visited, div.main-content tr.factorpager a, div.main-content tr.factorpager a:visited {background-color: #0f9309; color: #ffffff; border: solid 1px #0f9309; text-align:center; padding: 1px 8px 1px 8px; text-decoration: none; display: inline-block;}
+div.main-content a.buttonlink:hover, div.main-content a.buttonlink:active, div.main-content tr.factorpager a:hover, div.main-content tr.factorpager a:active {background-color: #f5f5f5; color: #262626; text-decoration: none;}
+
+footer {
+	background-color: #313131;
+	color: #fff;
+	font-size: 12px;
+	padding: 50px 0px;
+}
+
+footer h4 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+footer .footer-links {
+	padding: 0px;
+}
+
+footer .input-group {
+	margin-right: 40px;
+}
+
+footer .input-group .form-control {
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+footer .input-group span.input-group-addon {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    border: 0px;
+}
+
+footer p a {
+    color: #969595;
+}
+
+footer p a:hover {
+    color: #ffffff; 
+}
+
+.footer-links li {
+	margin-bottom: 10px;
+}
+
+.footer-links li a {
+	color: #969595;
+}
+
+.footer-links li:hover a {
+	color: #ffffff;
+}
+
+.footer-links li a:before {
+	color: #fff;
+	font-family: 'FontAwesome';
+	content: "\f101";
+	margin-right: 10px;
+}
+
+.footer-news {
+	margin-bottom: 35px;
+}
+
+.footer-share-button {
+    padding: 0px;
+}
+
+.footer-share-button li {
+    display: inline-block;
+}
+
+.footer-share-button li a i {
+	background-color: #4a4a4a;
+	border-radius: 0px;
+	color: #6b6b6b;
+	font-size: 12px;
+	font-weight: 600;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	width: 30px;
+}
+
+.footer-share-button li a i:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+@media (max-width: 991px) {
+	footer h4 {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.footer-widget {
+		width: 100%;
+	}
+}
+
+div.copyright { background-color: #2d2d2d; color: #6b6b6b; text-align: center; font-size: 12px;  line-height: 1.5em; }
+div.copyright div.container div { padding: 10px 0 10px 0; }
+div.copyright a { color: #999999; }
+div.copyright a:hover { color: #ffffff; }
+
+section {
+	padding: 1.7129em 0;
+}
+
+.headline {
+	margin-bottom: 50px;
+}
+
+#header {
+    background: #f0f0f0 no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: table;
+    height: calc(100vh - 172px); /* 100 masthead + 72 navbar */
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.header-wrapper .header-overlay {
+    min-height: 100vh;
+    /*min-width: 100vw;*/
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}   
+
+.header-wrapper .header-wrapper-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-wrapper .header-wrapper-inner .welcome-speech {
+	margin-top: 7em;
+}
+
+.header-wrapper .header-wrapper-inner .welcome-speech h1 {
+	color: #232c35;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 6px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.header-wrapper .header-wrapper-inner .welcome-speech p {
+	color: #232c35;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 4.2em;
+}
+
+/* portfolio styles are used for the TEMPLATE_IMAGES_AVADA snippets */
+
+.portfolio-item {
+	margin-bottom: 2em; /*3.1269em;*/
+}
+
+.portfolio-item .item-image {
+	position: relative;
+}
+
+.portfolio-item .item-image a,
+.portfolio-item .item-image a img {
+	display: block;
+	position: relative;
+}
+
+.portfolio-item .item-image a {
+	overflow: hidden;
+}
+
+.portfolio-item .item-image a div {
+	position: absolute;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-item .item-image a div span {
+	color: #ffffff;
+	display: block;
+	font-size: 50px;
+	position: absolute;
+	left: 45%;
+	top: 35%;
+}
+
+.portfolio-item .item-description {
+    padding: 15px 0px;
+}
+
+.portfolio-item .item-description span {
+    display: block;
+}
+
+.portfolio-item .item-description span.item-name {
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #474747;
+}
+
+.portfolio-item .item-description span.like {
+    float: right;
+    margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+	.portfolio-item .item-description {
+	    padding: 12px 50px;
+	}
+}
+
+.portfolio-item .item-description h1, .portfolio-item .item-description h2, .portfolio-item .item-description h3, .portfolio-item .item-description h4, .portfolio-item .item-description p {
+    margin-top: 0;
+}
+
+.portfolio-item .item-description p.moreinfo {
+    margin: 0;
+}
+
+/* the owl theme and sponsor styles are used for the TEMPLATE_CAROUSEL_AVADA snippets */
+
+.owl-theme .owl-controls .owl-buttons div
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	font-size: 15px;
+	opacity: 1;
+	margin: 0px;
+	transition: all .4s;
+	background-color: transparent;
+	color: #fff;
+	top: 40%;
+	line-height: 40px;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-prev:before {
+	content: "\f053";
+    font-family: 'FontAwesome';
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-next:before {
+	content: "\f054";
+	font-family: "FontAwesome";
+}
+
+@media (max-width: 991px) {
+	.intro .intro-description h2 {
+		margin-top: 1.414em;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 700px) {
+	.intro .intro-description {
+		padding-left: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	#client-speech .client-box .main-speech {
+		padding-left: 50%;
+	}
+
+	#client-speech .client-box .main-speech p {
+		margin-top: -5px;
+	}
+}
+
+.sponsor {
+    padding: 3.1269em 0;
+}
+
+#sponsor-list img {
+    opacity: 0.5;
+}
+
+#sponsor-list img:hover {
+    opacity: 1.0;
+}
+
+/* service styles are used for the TEMPLATE_IMAGES_AVADA snippets */
+
+.service-content {
+    margin-bottom: 2.714em;
+}
+
+.service-icon {
+	background-color: #fff;
+	border: 1px solid #969595;
+	border-radius: 50%;
+    color: #969595;
+    font-size: 45px;
+    height: 90px;
+    padding: 10px 0px 15px 3px;
+    width: 90px;
+}
+
+.service-content:hover .service-icon {
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff;
+}
+
+.service-description {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 10px 27px;
+}
+
+.service-description span {
+    color: #333333;
+	font-size: 21px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* styles used by dynamic pages */
+
+div.loginstatus {
+    color: #808080;
+}
+
+#currency { 
+    float: left;
+    padding: 0 10px 10px 0;
+    font-size: 1.5em;
+}
+
+#language {
+    float: left;
+    padding: 0 10px 10px 0;
+}
+
+.basketheader {border: 2px solid #ffffff; padding: 2px 10px 2px 10px; font-size: 1.1em; text-align: center; background-color: #808080; color: #FFFFFF;}
+.baskettext {border: 2px solid #ffffff; padding: 2px 5px 2px 5px;}
+.baskettotal {font-size: 1.3em; font-weight: bold; white-space: nowrap; text-align: right;}
+.basketprice {white-space: nowrap;}
+.emptybasket {font-size: 1.3em; font-weight: bold; text-align: center; padding: 10px; margin: 0;}
+
+table.checkout {border-collapse: collapse; border: 0; margin: 0 auto; padding: 0;}
+.checkoutleft {width: 50%; text-align: right; padding: 2px;}
+.checkoutright {width: 50%; text-align: left; padding: 2px;}
+.checkoutcenter {text-align: center; padding: 2px;}
+.checkoutbox {width: 20em;}
+.orderstable {text-align: center; margin: 20px auto;}
+span.price {font-size: 1.2em; font-weight: bold; color: #CC0000;}
+
+div.whycreate {padding: 0 0 5px 0;}
+div.multiset {border: solid 1px #1CA941; padding: 2px 8px 5px 8px; margin: 10px 0 10px 0; min-width: 680px;}
+table.multiset {margin: auto;}
+td.multisetleft {text-align: left; padding: 2px 2px 2px 10px;}
+td.multisetright {text-align: right; padding: 2px;}
+h3.multiset {margin: 0; padding: 0 0 10px 0;}
+.calcsetbox {width: 260px;}
+.calcsetdrop {width: 260px;}
+
+
+div.cert {text-align: center; padding: 10px;}
+div.cert p {margin: 0 0 0.5em 0;}
+.cert {text-align: center; padding: 10px;}
+.certlarge {font-size: 1.3em; font-weight: bold; text-align: center;}
+.certbox {font-size: 1em; font-weight: bold; text-align: center; width: 320px; border: 2px solid #CC0000; padding: 0 0 4px 0;}
+.certdate {font-size: 1.1em; font-weight: bold; text-align: center; padding-top: 10px;}
+.certmedium {font-size: 1.1em;}
+.certsmall {font-size: 0.9em; padding-top: 10px;}
+div.datepicker {font-weight: bold; margin: auto; padding: 2px 0 1px 0; margin-top: 5px; border: 2px solid #CC0000;}
+div.datepicker table tr td.rcInputCell input.certbox {font-size: 16px; font-family:'Open Sans',sans-serif; font-weight: bold;}
+.red {color: #CC0000;}
+.error {text-align: center; font-weight: bold; color: #FF0000;}
+.box24em {width: 24em; margin: 2px 2px 2px 5px;}
+div.main-content div.red ul {text-align: center; color: #FF0000;}
+div.main-content div.red ul li {background-image: none;}
+
+table.factorboxes {margin: auto; margin-top: 10px; min-width: 770px; }
+table.factorboxes tr td {padding-right: 10px;}
+table.factorresults tr td.baskettext {font-size: 0.9em;}
+td.factorname span {background-color: #FFFF80; color: #000000; font-weight: bold;}
+tr.factorpager td table tr td {padding: 2px;}
+tr.factorpager td span {background-color: #f5f5f5; color: #262626; border: solid 1px #0f9309; text-align:center; padding: 1px 8px 1px 8px; text-decoration: none; display: block;}
+
+.nospace {border: 0; margin: 0; padding: 0;}
+table.orderstable {margin: 10px auto;}
+table.orderstable h4 {color: #333333; font-weight: bold; font-size: 1em;}
+table.nospace h2, table.nospace h3 {margin-top: 0;}
+
+.w400 {width: 400px;}
+h4.error {font-size: 1em;}
+h4.login {margin: 0;}
+.topalign {vertical-align: top;}
+.halfwidth {width: 50%;}
+.fullwidth {width: 100%;}
+.txtmedium {width: 14em;}
+.loginleft {padding: 10px 5px 10px 0; vertical-align: middle;}
+.loginright {padding: 5px 0 5px 5px; vertical-align: middle;}
+.registerleft {width: 50%; text-align: right; padding: 5px 10px 5px 0;}
+.registerright {width: 50%; text-align: left; padding: 5px 0 5px 0;}
+.registerbox {width: 24em;}
+.registercenter {text-align: center;}
+.registercustomleft {width: 50%; text-align: right; padding: 2px 10px 2px 0;}
+.registercustomright {width: 50%; text-align: left; padding: 2px 0 2px 0;}
+
+div.worldpay {text-align: center;}
